@@ -12,7 +12,7 @@ namespace Учет_оборудования
 {
 	public partial class Staff : Form
 	{
-		public Staff() 
+		public Staff()
 		{
 			InitializeComponent();
 		}
@@ -27,8 +27,10 @@ namespace Учет_оборудования
 
 		private void Staff_Load(object sender, EventArgs e)
 		{
-			// TODO: This line of code loads data into the 'database_equipment_accountingDataSet.Склад' table. You can move, or remove it, as needed.
-			this.складTableAdapter.Fill(this.database_equipment_accountingDataSet.Склад);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "database_equipment_accountingDataSet.Сотрудник_представление". При необходимости она может быть перемещена или удалена.
+            this.сотрудник_представлениеTableAdapter.Fill(this.database_equipment_accountingDataSet.Сотрудник_представление);
+            // TODO: This line of code loads data into the 'database_equipment_accountingDataSet.Склад' table. You can move, or remove it, as needed.
+            this.складTableAdapter.Fill(this.database_equipment_accountingDataSet.Склад);
 			// TODO: This line of code loads data into the 'database_equipment_accountingDataSet.Сотрудники' table. You can move, or remove it, as needed.
 			this.сотрудникиTableAdapter.Fill(this.database_equipment_accountingDataSet.Сотрудники);
             TreeNode respublic = new TreeNode("Беларусь");
@@ -7780,19 +7782,24 @@ namespace Учет_оборудования
 
         private void button10_Click(object sender, EventArgs e)
         {
-            string dom = ", д. " + textBox1.Text + ", кв. " + textBox2.Text;
+            string dom =(", д. " + textBox1.Text + ", кв. " + textBox2.Text);
             string adres_sotrydnika = адрес_сотрудникаTextBox.Text;
-			
 
-			if (!adres_sotrydnika.Contains(", д. "))
+            if (!adres_sotrydnika.Contains(", д. "))
             {
-	            адрес_сотрудникаTextBox.Text = adres_sotrydnika + dom;
-			}
+                адрес_сотрудникаTextBox.Text = adres_sotrydnika + dom;
+            }
             else
             {
-	            var ddd = adres_sotrydnika.Substring(adres_sotrydnika.IndexOf(", д. "));
-				адрес_сотрудникаTextBox.Text = adres_sotrydnika.Replace(ddd,dom);
-			}
+                var ddd = adres_sotrydnika.Substring(adres_sotrydnika.IndexOf(", д. "));
+                адрес_сотрудникаTextBox.Text = adres_sotrydnika.Replace(ddd, dom);
+            }
+
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
 
         }
     }

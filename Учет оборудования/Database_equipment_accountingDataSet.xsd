@@ -416,6 +416,31 @@ SELECT ID_Сотрудника, Idd_Склада, Номер_паспорта, �
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Сотрудник_представлениеTableAdapter" GeneratorDataComponentClassName="Сотрудник_представлениеTableAdapter" Name="Сотрудник_представление" UserDataComponentName="Сотрудник_представлениеTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Database_equipment_accountingConnectionString (Settings)" DbObjectName="dbo.Сотрудник_представление" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Адрес_склад, Номер_паспорта, Фамилия, Имя, Отчество, Должность, Адрес_сотрудника, Номер_телефона_сотрудника, Дата_рождения_сотрудника, ID_Сотрудника FROM Сотрудник_представление</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Адрес_склад" DataSetColumn="Адрес_склад" />
+              <Mapping SourceColumn="Номер_паспорта" DataSetColumn="Номер_паспорта" />
+              <Mapping SourceColumn="Фамилия" DataSetColumn="Фамилия" />
+              <Mapping SourceColumn="Имя" DataSetColumn="Имя" />
+              <Mapping SourceColumn="Отчество" DataSetColumn="Отчество" />
+              <Mapping SourceColumn="Должность" DataSetColumn="Должность" />
+              <Mapping SourceColumn="Адрес_сотрудника" DataSetColumn="Адрес_сотрудника" />
+              <Mapping SourceColumn="Номер_телефона_сотрудника" DataSetColumn="Номер_телефона_сотрудника" />
+              <Mapping SourceColumn="Дата_рождения_сотрудника" DataSetColumn="Дата_рождения_сотрудника" />
+              <Mapping SourceColumn="ID_Сотрудника" DataSetColumn="ID_Сотрудника" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -424,7 +449,7 @@ SELECT ID_Сотрудника, Idd_Склада, Номер_паспорта, �
   <xs:element name="Database_equipment_accountingDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Database_equipment_accountingDataSet" msprop:Generator_UserDSName="Database_equipment_accountingDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Категории" msprop:Generator_TableClassName="КатегорииDataTable" msprop:Generator_TableVarName="tableКатегории" msprop:Generator_RowChangedName="КатегорииRowChanged" msprop:Generator_TablePropName="Категории" msprop:Generator_RowDeletingName="КатегорииRowDeleting" msprop:Generator_RowChangingName="КатегорииRowChanging" msprop:Generator_RowEvHandlerName="КатегорииRowChangeEventHandler" msprop:Generator_RowDeletedName="КатегорииRowDeleted" msprop:Generator_RowClassName="КатегорииRow" msprop:Generator_UserTableName="Категории" msprop:Generator_RowEvArgName="КатегорииRowChangeEvent">
+        <xs:element name="Категории" msprop:Generator_TableClassName="КатегорииDataTable" msprop:Generator_TableVarName="tableКатегории" msprop:Generator_TablePropName="Категории" msprop:Generator_RowDeletingName="КатегорииRowDeleting" msprop:Generator_RowChangingName="КатегорииRowChanging" msprop:Generator_RowEvHandlerName="КатегорииRowChangeEventHandler" msprop:Generator_RowDeletedName="КатегорииRowDeleted" msprop:Generator_UserTableName="Категории" msprop:Generator_RowChangedName="КатегорииRowChanged" msprop:Generator_RowEvArgName="КатегорииRowChangeEvent" msprop:Generator_RowClassName="КатегорииRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_Категории" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_Категории" msprop:Generator_ColumnPropNameInRow="ID_Категории" msprop:Generator_ColumnPropNameInTable="ID_КатегорииColumn" msprop:Generator_UserColumnName="ID_Категории" type="xs:int" />
@@ -439,7 +464,7 @@ SELECT ID_Сотрудника, Idd_Склада, Номер_паспорта, �
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Оборудование" msprop:Generator_TableClassName="ОборудованиеDataTable" msprop:Generator_TableVarName="tableОборудование" msprop:Generator_RowChangedName="ОборудованиеRowChanged" msprop:Generator_TablePropName="Оборудование" msprop:Generator_RowDeletingName="ОборудованиеRowDeleting" msprop:Generator_RowChangingName="ОборудованиеRowChanging" msprop:Generator_RowEvHandlerName="ОборудованиеRowChangeEventHandler" msprop:Generator_RowDeletedName="ОборудованиеRowDeleted" msprop:Generator_RowClassName="ОборудованиеRow" msprop:Generator_UserTableName="Оборудование" msprop:Generator_RowEvArgName="ОборудованиеRowChangeEvent">
+        <xs:element name="Оборудование" msprop:Generator_TableClassName="ОборудованиеDataTable" msprop:Generator_TableVarName="tableОборудование" msprop:Generator_TablePropName="Оборудование" msprop:Generator_RowDeletingName="ОборудованиеRowDeleting" msprop:Generator_RowChangingName="ОборудованиеRowChanging" msprop:Generator_RowEvHandlerName="ОборудованиеRowChangeEventHandler" msprop:Generator_RowDeletedName="ОборудованиеRowDeleted" msprop:Generator_UserTableName="Оборудование" msprop:Generator_RowChangedName="ОборудованиеRowChanged" msprop:Generator_RowEvArgName="ОборудованиеRowChangeEvent" msprop:Generator_RowClassName="ОборудованиеRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_Оборудования" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_Оборудования" msprop:Generator_ColumnPropNameInRow="ID_Оборудования" msprop:Generator_ColumnPropNameInTable="ID_ОборудованияColumn" msprop:Generator_UserColumnName="ID_Оборудования" type="xs:int" />
@@ -491,7 +516,7 @@ SELECT ID_Сотрудника, Idd_Склада, Номер_паспорта, �
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Поставка" msprop:Generator_TableClassName="ПоставкаDataTable" msprop:Generator_TableVarName="tableПоставка" msprop:Generator_RowChangedName="ПоставкаRowChanged" msprop:Generator_TablePropName="Поставка" msprop:Generator_RowDeletingName="ПоставкаRowDeleting" msprop:Generator_RowChangingName="ПоставкаRowChanging" msprop:Generator_RowEvHandlerName="ПоставкаRowChangeEventHandler" msprop:Generator_RowDeletedName="ПоставкаRowDeleted" msprop:Generator_RowClassName="ПоставкаRow" msprop:Generator_UserTableName="Поставка" msprop:Generator_RowEvArgName="ПоставкаRowChangeEvent">
+        <xs:element name="Поставка" msprop:Generator_TableClassName="ПоставкаDataTable" msprop:Generator_TableVarName="tableПоставка" msprop:Generator_TablePropName="Поставка" msprop:Generator_RowDeletingName="ПоставкаRowDeleting" msprop:Generator_RowChangingName="ПоставкаRowChanging" msprop:Generator_RowEvHandlerName="ПоставкаRowChangeEventHandler" msprop:Generator_RowDeletedName="ПоставкаRowDeleted" msprop:Generator_UserTableName="Поставка" msprop:Generator_RowChangedName="ПоставкаRowChanged" msprop:Generator_RowEvArgName="ПоставкаRowChangeEvent" msprop:Generator_RowClassName="ПоставкаRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_Промежуточная_таблица" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_Промежуточная_таблица" msprop:Generator_ColumnPropNameInRow="ID_Промежуточная_таблица" msprop:Generator_ColumnPropNameInTable="ID_Промежуточная_таблицаColumn" msprop:Generator_UserColumnName="ID_Промежуточная_таблица" type="xs:int" />
@@ -500,7 +525,7 @@ SELECT ID_Сотрудника, Idd_Склада, Номер_паспорта, �
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Поставщик" msprop:Generator_TableClassName="ПоставщикDataTable" msprop:Generator_TableVarName="tableПоставщик" msprop:Generator_RowChangedName="ПоставщикRowChanged" msprop:Generator_TablePropName="Поставщик" msprop:Generator_RowDeletingName="ПоставщикRowDeleting" msprop:Generator_RowChangingName="ПоставщикRowChanging" msprop:Generator_RowEvHandlerName="ПоставщикRowChangeEventHandler" msprop:Generator_RowDeletedName="ПоставщикRowDeleted" msprop:Generator_RowClassName="ПоставщикRow" msprop:Generator_UserTableName="Поставщик" msprop:Generator_RowEvArgName="ПоставщикRowChangeEvent">
+        <xs:element name="Поставщик" msprop:Generator_TableClassName="ПоставщикDataTable" msprop:Generator_TableVarName="tableПоставщик" msprop:Generator_TablePropName="Поставщик" msprop:Generator_RowDeletingName="ПоставщикRowDeleting" msprop:Generator_RowChangingName="ПоставщикRowChanging" msprop:Generator_RowEvHandlerName="ПоставщикRowChangeEventHandler" msprop:Generator_RowDeletedName="ПоставщикRowDeleted" msprop:Generator_UserTableName="Поставщик" msprop:Generator_RowChangedName="ПоставщикRowChanged" msprop:Generator_RowEvArgName="ПоставщикRowChangeEvent" msprop:Generator_RowClassName="ПоставщикRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_Поставщика" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_Поставщика" msprop:Generator_ColumnPropNameInRow="ID_Поставщика" msprop:Generator_ColumnPropNameInTable="ID_ПоставщикаColumn" msprop:Generator_UserColumnName="ID_Поставщика" type="xs:int" />
@@ -528,7 +553,7 @@ SELECT ID_Сотрудника, Idd_Склада, Номер_паспорта, �
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Склад" msprop:Generator_TableClassName="СкладDataTable" msprop:Generator_TableVarName="tableСклад" msprop:Generator_RowChangedName="СкладRowChanged" msprop:Generator_TablePropName="Склад" msprop:Generator_RowDeletingName="СкладRowDeleting" msprop:Generator_RowChangingName="СкладRowChanging" msprop:Generator_RowEvHandlerName="СкладRowChangeEventHandler" msprop:Generator_RowDeletedName="СкладRowDeleted" msprop:Generator_RowClassName="СкладRow" msprop:Generator_UserTableName="Склад" msprop:Generator_RowEvArgName="СкладRowChangeEvent">
+        <xs:element name="Склад" msprop:Generator_TableClassName="СкладDataTable" msprop:Generator_TableVarName="tableСклад" msprop:Generator_TablePropName="Склад" msprop:Generator_RowDeletingName="СкладRowDeleting" msprop:Generator_RowChangingName="СкладRowChanging" msprop:Generator_RowEvHandlerName="СкладRowChangeEventHandler" msprop:Generator_RowDeletedName="СкладRowDeleted" msprop:Generator_UserTableName="Склад" msprop:Generator_RowChangedName="СкладRowChanged" msprop:Generator_RowEvArgName="СкладRowChangeEvent" msprop:Generator_RowClassName="СкладRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_Склада" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_Склада" msprop:Generator_ColumnPropNameInRow="ID_Склада" msprop:Generator_ColumnPropNameInTable="ID_СкладаColumn" msprop:Generator_UserColumnName="ID_Склада" type="xs:int" />
@@ -549,7 +574,7 @@ SELECT ID_Сотрудника, Idd_Склада, Номер_паспорта, �
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Сотрудники" msprop:Generator_TableClassName="СотрудникиDataTable" msprop:Generator_TableVarName="tableСотрудники" msprop:Generator_RowChangedName="СотрудникиRowChanged" msprop:Generator_TablePropName="Сотрудники" msprop:Generator_RowDeletingName="СотрудникиRowDeleting" msprop:Generator_RowChangingName="СотрудникиRowChanging" msprop:Generator_RowEvHandlerName="СотрудникиRowChangeEventHandler" msprop:Generator_RowDeletedName="СотрудникиRowDeleted" msprop:Generator_RowClassName="СотрудникиRow" msprop:Generator_UserTableName="Сотрудники" msprop:Generator_RowEvArgName="СотрудникиRowChangeEvent">
+        <xs:element name="Сотрудники" msprop:Generator_TableClassName="СотрудникиDataTable" msprop:Generator_TableVarName="tableСотрудники" msprop:Generator_TablePropName="Сотрудники" msprop:Generator_RowDeletingName="СотрудникиRowDeleting" msprop:Generator_RowChangingName="СотрудникиRowChanging" msprop:Generator_RowEvHandlerName="СотрудникиRowChangeEventHandler" msprop:Generator_RowDeletedName="СотрудникиRowDeleted" msprop:Generator_UserTableName="Сотрудники" msprop:Generator_RowChangedName="СотрудникиRowChanged" msprop:Generator_RowEvArgName="СотрудникиRowChangeEvent" msprop:Generator_RowClassName="СотрудникиRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_Сотрудника" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_Сотрудника" msprop:Generator_ColumnPropNameInRow="ID_Сотрудника" msprop:Generator_ColumnPropNameInTable="ID_СотрудникаColumn" msprop:Generator_UserColumnName="ID_Сотрудника" type="xs:int" />
@@ -607,6 +632,70 @@ SELECT ID_Сотрудника, Idd_Склада, Номер_паспорта, �
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="Сотрудник_представление" msprop:Generator_TableClassName="Сотрудник_представлениеDataTable" msprop:Generator_TableVarName="tableСотрудник_представление" msprop:Generator_TablePropName="Сотрудник_представление" msprop:Generator_RowDeletingName="Сотрудник_представлениеRowDeleting" msprop:Generator_RowChangingName="Сотрудник_представлениеRowChanging" msprop:Generator_RowEvHandlerName="Сотрудник_представлениеRowChangeEventHandler" msprop:Generator_RowDeletedName="Сотрудник_представлениеRowDeleted" msprop:Generator_UserTableName="Сотрудник_представление" msprop:Generator_RowChangedName="Сотрудник_представлениеRowChanged" msprop:Generator_RowEvArgName="Сотрудник_представлениеRowChangeEvent" msprop:Generator_RowClassName="Сотрудник_представлениеRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Адрес_склад" msprop:Generator_ColumnVarNameInTable="columnАдрес_склад" msprop:Generator_ColumnPropNameInRow="Адрес_склад" msprop:Generator_ColumnPropNameInTable="Адрес_складColumn" msprop:Generator_UserColumnName="Адрес_склад">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Номер_паспорта" msprop:Generator_ColumnVarNameInTable="columnНомер_паспорта" msprop:Generator_ColumnPropNameInRow="Номер_паспорта" msprop:Generator_ColumnPropNameInTable="Номер_паспортаColumn" msprop:Generator_UserColumnName="Номер_паспорта">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Фамилия" msprop:Generator_ColumnVarNameInTable="columnФамилия" msprop:Generator_ColumnPropNameInRow="Фамилия" msprop:Generator_ColumnPropNameInTable="ФамилияColumn" msprop:Generator_UserColumnName="Фамилия">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Имя" msprop:Generator_ColumnVarNameInTable="columnИмя" msprop:Generator_ColumnPropNameInRow="Имя" msprop:Generator_ColumnPropNameInTable="ИмяColumn" msprop:Generator_UserColumnName="Имя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отчество" msprop:Generator_ColumnVarNameInTable="columnОтчество" msprop:Generator_ColumnPropNameInRow="Отчество" msprop:Generator_ColumnPropNameInTable="ОтчествоColumn" msprop:Generator_UserColumnName="Отчество">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Должность" msprop:Generator_ColumnVarNameInTable="columnДолжность" msprop:Generator_ColumnPropNameInRow="Должность" msprop:Generator_ColumnPropNameInTable="ДолжностьColumn" msprop:Generator_UserColumnName="Должность">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адрес_сотрудника" msprop:Generator_ColumnVarNameInTable="columnАдрес_сотрудника" msprop:Generator_ColumnPropNameInRow="Адрес_сотрудника" msprop:Generator_ColumnPropNameInTable="Адрес_сотрудникаColumn" msprop:Generator_UserColumnName="Адрес_сотрудника" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Номер_телефона_сотрудника" msprop:Generator_ColumnVarNameInTable="columnНомер_телефона_сотрудника" msprop:Generator_ColumnPropNameInRow="Номер_телефона_сотрудника" msprop:Generator_ColumnPropNameInTable="Номер_телефона_сотрудникаColumn" msprop:Generator_UserColumnName="Номер_телефона_сотрудника">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата_рождения_сотрудника" msprop:Generator_ColumnVarNameInTable="columnДата_рождения_сотрудника" msprop:Generator_ColumnPropNameInRow="Дата_рождения_сотрудника" msprop:Generator_ColumnPropNameInTable="Дата_рождения_сотрудникаColumn" msprop:Generator_UserColumnName="Дата_рождения_сотрудника" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ID_Сотрудника" msprop:Generator_ColumnVarNameInTable="columnID_Сотрудника" msprop:Generator_ColumnPropNameInRow="ID_Сотрудника" msprop:Generator_ColumnPropNameInTable="ID_СотрудникаColumn" msprop:Generator_UserColumnName="ID_Сотрудника" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -633,15 +722,19 @@ SELECT ID_Сотрудника, Idd_Склада, Номер_паспорта, �
       <xs:selector xpath=".//mstns:Сотрудники" />
       <xs:field xpath="mstns:ID_Сотрудника" />
     </xs:unique>
+    <xs:unique name="Сотрудник_представление_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Сотрудник_представление" />
+      <xs:field xpath="mstns:ID_Сотрудника" />
+    </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK__Категории__Id_Об__32E0915F" msdata:parent="Оборудование" msdata:child="Категории" msdata:parentkey="ID_Оборудования" msdata:childkey="Id_Оборудования" msprop:Generator_UserChildTable="Категории" msprop:Generator_ChildPropName="GetКатегорииRows" msprop:Generator_UserRelationName="FK__Категории__Id_Об__32E0915F" msprop:Generator_ParentPropName="ОборудованиеRow" msprop:Generator_RelationVarName="relationFK__Категории__Id_Об__32E0915F" msprop:Generator_UserParentTable="Оборудование" />
-      <msdata:Relationship name="FK__Оборудова__Id_Ск__300424B4" msdata:parent="Склад" msdata:child="Оборудование" msdata:parentkey="ID_Склада" msdata:childkey="Id_Склада" msprop:Generator_UserChildTable="Оборудование" msprop:Generator_ChildPropName="GetОборудованиеRows" msprop:Generator_UserRelationName="FK__Оборудова__Id_Ск__300424B4" msprop:Generator_ParentPropName="СкладRow" msprop:Generator_RelationVarName="relationFK__Оборудова__Id_Ск__300424B4" msprop:Generator_UserParentTable="Склад" />
-      <msdata:Relationship name="FK__Поставка__Id_Пос__36B12243" msdata:parent="Поставщик" msdata:child="Поставка" msdata:parentkey="ID_Поставщика" msdata:childkey="Id_Поставщика" msprop:Generator_UserChildTable="Поставка" msprop:Generator_ChildPropName="GetПоставкаRows" msprop:Generator_UserRelationName="FK__Поставка__Id_Пос__36B12243" msprop:Generator_ParentPropName="ПоставщикRow" msprop:Generator_RelationVarName="relationFK__Поставка__Id_Пос__36B12243" msprop:Generator_UserParentTable="Поставщик" />
-      <msdata:Relationship name="FK__Поставка__Idd_Об__35BCFE0A" msdata:parent="Оборудование" msdata:child="Поставка" msdata:parentkey="ID_Оборудования" msdata:childkey="Idd_Оборудования" msprop:Generator_UserChildTable="Поставка" msprop:Generator_ChildPropName="GetПоставкаRows" msprop:Generator_UserRelationName="FK__Поставка__Idd_Об__35BCFE0A" msprop:Generator_RelationVarName="relationFK__Поставка__Idd_Об__35BCFE0A" msprop:Generator_UserParentTable="Оборудование" msprop:Generator_ParentPropName="ОборудованиеRow" />
-      <msdata:Relationship name="FK__Сотрудник__Idd_С__2B3F6F97" msdata:parent="Склад" msdata:child="Сотрудники" msdata:parentkey="ID_Склада" msdata:childkey="Idd_Склада" msprop:Generator_UserChildTable="Сотрудники" msprop:Generator_ChildPropName="GetСотрудникиRows" msprop:Generator_UserRelationName="FK__Сотрудник__Idd_С__2B3F6F97" msprop:Generator_RelationVarName="relationFK__Сотрудник__Idd_С__2B3F6F97" msprop:Generator_UserParentTable="Склад" msprop:Generator_ParentPropName="СкладRow" />
-      <msdata:Relationship name="FK__Оборудова__id_Ка__47DBAE45" msdata:parent="Категории" msdata:child="Оборудование" msdata:parentkey="ID_Категории" msdata:childkey="id_Категории" msprop:Generator_UserChildTable="Оборудование" msprop:Generator_ChildPropName="GetОборудованиеRows" msprop:Generator_UserRelationName="FK__Оборудова__id_Ка__47DBAE45" msprop:Generator_ParentPropName="КатегорииRow" msprop:Generator_RelationVarName="relationFK__Оборудова__id_Ка__47DBAE45" msprop:Generator_UserParentTable="Категории" />
+      <msdata:Relationship name="FK__Категории__Id_Об__32E0915F" msdata:parent="Оборудование" msdata:child="Категории" msdata:parentkey="ID_Оборудования" msdata:childkey="Id_Оборудования" msprop:Generator_UserChildTable="Категории" msprop:Generator_ChildPropName="GetКатегорииRows" msprop:Generator_UserRelationName="FK__Категории__Id_Об__32E0915F" msprop:Generator_RelationVarName="relationFK__Категории__Id_Об__32E0915F" msprop:Generator_UserParentTable="Оборудование" msprop:Generator_ParentPropName="ОборудованиеRow" />
+      <msdata:Relationship name="FK__Оборудова__Id_Ск__300424B4" msdata:parent="Склад" msdata:child="Оборудование" msdata:parentkey="ID_Склада" msdata:childkey="Id_Склада" msprop:Generator_UserChildTable="Оборудование" msprop:Generator_ChildPropName="GetОборудованиеRows" msprop:Generator_UserRelationName="FK__Оборудова__Id_Ск__300424B4" msprop:Generator_RelationVarName="relationFK__Оборудова__Id_Ск__300424B4" msprop:Generator_UserParentTable="Склад" msprop:Generator_ParentPropName="СкладRow" />
+      <msdata:Relationship name="FK__Поставка__Id_Пос__36B12243" msdata:parent="Поставщик" msdata:child="Поставка" msdata:parentkey="ID_Поставщика" msdata:childkey="Id_Поставщика" msprop:Generator_UserChildTable="Поставка" msprop:Generator_ChildPropName="GetПоставкаRows" msprop:Generator_UserRelationName="FK__Поставка__Id_Пос__36B12243" msprop:Generator_RelationVarName="relationFK__Поставка__Id_Пос__36B12243" msprop:Generator_UserParentTable="Поставщик" msprop:Generator_ParentPropName="ПоставщикRow" />
+      <msdata:Relationship name="FK__Поставка__Idd_Об__35BCFE0A" msdata:parent="Оборудование" msdata:child="Поставка" msdata:parentkey="ID_Оборудования" msdata:childkey="Idd_Оборудования" msprop:Generator_UserChildTable="Поставка" msprop:Generator_ChildPropName="GetПоставкаRows" msprop:Generator_UserRelationName="FK__Поставка__Idd_Об__35BCFE0A" msprop:Generator_ParentPropName="ОборудованиеRow" msprop:Generator_RelationVarName="relationFK__Поставка__Idd_Об__35BCFE0A" msprop:Generator_UserParentTable="Оборудование" />
+      <msdata:Relationship name="FK__Сотрудник__Idd_С__2B3F6F97" msdata:parent="Склад" msdata:child="Сотрудники" msdata:parentkey="ID_Склада" msdata:childkey="Idd_Склада" msprop:Generator_UserChildTable="Сотрудники" msprop:Generator_ChildPropName="GetСотрудникиRows" msprop:Generator_UserRelationName="FK__Сотрудник__Idd_С__2B3F6F97" msprop:Generator_ParentPropName="СкладRow" msprop:Generator_RelationVarName="relationFK__Сотрудник__Idd_С__2B3F6F97" msprop:Generator_UserParentTable="Склад" />
+      <msdata:Relationship name="FK__Оборудова__id_Ка__47DBAE45" msdata:parent="Категории" msdata:child="Оборудование" msdata:parentkey="ID_Категории" msdata:childkey="id_Категории" msprop:Generator_UserChildTable="Оборудование" msprop:Generator_ChildPropName="GetОборудованиеRows" msprop:Generator_UserRelationName="FK__Оборудова__id_Ка__47DBAE45" msprop:Generator_RelationVarName="relationFK__Оборудова__id_Ка__47DBAE45" msprop:Generator_UserParentTable="Категории" msprop:Generator_ParentPropName="КатегорииRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

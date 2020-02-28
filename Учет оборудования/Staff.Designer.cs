@@ -65,7 +65,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.дата_рождения_сотрудникаDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.button9 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -73,6 +72,9 @@
             this.button10 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.сотрудник_представлениеBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.сотрудник_представлениеTableAdapter = new Учет_оборудования.Database_equipment_accountingDataSetTableAdapters.Сотрудник_представлениеTableAdapter();
+            this.дата_рождения_сотрудникаDateTimePicker = new System.Windows.Forms.DateTimePicker();
             idd_СкладаLabel = new System.Windows.Forms.Label();
             номер_паспортаLabel = new System.Windows.Forms.Label();
             фамилияLabel = new System.Windows.Forms.Label();
@@ -88,6 +90,7 @@
             this.сотрудникиBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.складBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.складBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.сотрудник_представлениеBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // idd_СкладаLabel
@@ -137,12 +140,6 @@
             resources.ApplyResources(номер_телефона_сотрудникаLabel, "номер_телефона_сотрудникаLabel");
             номер_телефона_сотрудникаLabel.BackColor = System.Drawing.Color.Transparent;
             номер_телефона_сотрудникаLabel.Name = "номер_телефона_сотрудникаLabel";
-            // 
-            // дата_рождения_сотрудникаLabel
-            // 
-            resources.ApplyResources(дата_рождения_сотрудникаLabel, "дата_рождения_сотрудникаLabel");
-            дата_рождения_сотрудникаLabel.BackColor = System.Drawing.Color.Transparent;
-            дата_рождения_сотрудникаLabel.Name = "дата_рождения_сотрудникаLabel";
             // 
             // database_equipment_accountingDataSet
             // 
@@ -323,12 +320,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // дата_рождения_сотрудникаDateTimePicker
-            // 
-            this.дата_рождения_сотрудникаDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.сотрудникиBindingSource, "Дата_рождения_сотрудника", true));
-            resources.ApplyResources(this.дата_рождения_сотрудникаDateTimePicker, "дата_рождения_сотрудникаDateTimePicker");
-            this.дата_рождения_сотрудникаDateTimePicker.Name = "дата_рождения_сотрудникаDateTimePicker";
-            // 
             // treeView1
             // 
             resources.ApplyResources(this.treeView1, "treeView1");
@@ -365,17 +356,41 @@
             // 
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // textBox2
             // 
             resources.ApplyResources(this.textBox2, "textBox2");
             this.textBox2.Name = "textBox2";
             // 
+            // сотрудник_представлениеBindingSource
+            // 
+            this.сотрудник_представлениеBindingSource.DataMember = "Сотрудник_представление";
+            this.сотрудник_представлениеBindingSource.DataSource = this.database_equipment_accountingDataSet;
+            // 
+            // сотрудник_представлениеTableAdapter
+            // 
+            this.сотрудник_представлениеTableAdapter.ClearBeforeFill = true;
+            // 
+            // дата_рождения_сотрудникаLabel
+            // 
+            resources.ApplyResources(дата_рождения_сотрудникаLabel, "дата_рождения_сотрудникаLabel");
+            дата_рождения_сотрудникаLabel.BackColor = System.Drawing.Color.Transparent;
+            дата_рождения_сотрудникаLabel.Name = "дата_рождения_сотрудникаLabel";
+            // 
+            // дата_рождения_сотрудникаDateTimePicker
+            // 
+            this.дата_рождения_сотрудникаDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.сотрудникиBindingSource, "Дата_рождения_сотрудника", true));
+            resources.ApplyResources(this.дата_рождения_сотрудникаDateTimePicker, "дата_рождения_сотрудникаDateTimePicker");
+            this.дата_рождения_сотрудникаDateTimePicker.Name = "дата_рождения_сотрудникаDateTimePicker";
+            // 
             // Staff
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Учет_оборудования.Properties.Resources._15f8153cb5f61ff9bfad853c2966eb6d;
+            this.Controls.Add(дата_рождения_сотрудникаLabel);
+            this.Controls.Add(this.дата_рождения_сотрудникаDateTimePicker);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button10);
@@ -383,8 +398,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.treeView1);
-            this.Controls.Add(дата_рождения_сотрудникаLabel);
-            this.Controls.Add(this.дата_рождения_сотрудникаDateTimePicker);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -421,6 +434,7 @@
             this.сотрудникиBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.складBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.складBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.сотрудник_представлениеBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -454,7 +468,6 @@
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker дата_рождения_сотрудникаDateTimePicker;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label1;
@@ -462,5 +475,8 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.BindingSource сотрудник_представлениеBindingSource;
+        private Database_equipment_accountingDataSetTableAdapters.Сотрудник_представлениеTableAdapter сотрудник_представлениеTableAdapter;
+        private System.Windows.Forms.DateTimePicker дата_рождения_сотрудникаDateTimePicker;
     }
 }

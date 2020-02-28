@@ -40,7 +40,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -49,9 +48,11 @@
             this.button5 = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.сотрудникиDataGridView = new System.Windows.Forms.DataGridView();
-            this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.сотрудникпредставлениеBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.сотрудник_представлениеTableAdapter = new Учет_оборудования.Database_equipment_accountingDataSetTableAdapters.Сотрудник_представлениеTableAdapter();
+            this.сотрудник_представлениеDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,12 +61,17 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.database_equipment_accountingDataSet1 = new Учет_оборудования.Database_equipment_accountingDataSet();
+            this.сотрудникпредставлениеBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.database_equipment_accountingDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.сотрудникиBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.сотрудникиDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.сотрудникпредставлениеBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.сотрудник_представлениеDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_equipment_accountingDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.сотрудникпредставлениеBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // database_equipment_accountingDataSet
@@ -164,19 +170,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(202, 20);
             this.textBox1.TabIndex = 3;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.сотрудникиBindingSource, "ID_Сотрудника", true));
-            this.comboBox1.DataSource = this.сотрудникиBindingSource;
-            this.comboBox1.DisplayMember = "Фамилия";
-            this.comboBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(242, 290);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(404, 27);
-            this.comboBox1.TabIndex = 24;
-            this.comboBox1.ValueMember = "ID_Сотрудника";
             // 
             // label2
             // 
@@ -277,36 +270,6 @@
             this.listBox1.Size = new System.Drawing.Size(204, 164);
             this.listBox1.TabIndex = 15;
             // 
-            // сотрудникиDataGridView
-            // 
-            this.сотрудникиDataGridView.AutoGenerateColumns = false;
-            this.сотрудникиDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.сотрудникиDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10});
-            this.сотрудникиDataGridView.DataSource = this.сотрудникиBindingSource;
-            this.сотрудникиDataGridView.Location = new System.Drawing.Point(15, 12);
-            this.сотрудникиDataGridView.Name = "сотрудникиDataGridView";
-            this.сотрудникиDataGridView.Size = new System.Drawing.Size(540, 262);
-            this.сотрудникиDataGridView.TabIndex = 24;
-            // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.button8.Location = new System.Drawing.Point(1072, 522);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(241, 33);
-            this.button8.TabIndex = 25;
-            this.button8.Text = "Экспорт таблицы в Excel";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
             // button9
             // 
             this.button9.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
@@ -317,61 +280,109 @@
             this.button9.Text = "Сформировать отчет";
             this.button9.UseVisualStyleBackColor = true;
             // 
+            // сотрудникпредставлениеBindingSource
+            // 
+            this.сотрудникпредставлениеBindingSource.DataMember = "Сотрудник_представление";
+            this.сотрудникпредставлениеBindingSource.DataSource = this.database_equipment_accountingDataSet;
+            // 
+            // сотрудник_представлениеTableAdapter
+            // 
+            this.сотрудник_представлениеTableAdapter.ClearBeforeFill = true;
+            // 
+            // сотрудник_представлениеDataGridView
+            // 
+            this.сотрудник_представлениеDataGridView.AutoGenerateColumns = false;
+            this.сотрудник_представлениеDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.сотрудник_представлениеDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9});
+            this.сотрудник_представлениеDataGridView.DataSource = this.сотрудникпредставлениеBindingSource1;
+            this.сотрудник_представлениеDataGridView.Location = new System.Drawing.Point(12, 15);
+            this.сотрудник_представлениеDataGridView.Name = "сотрудник_представлениеDataGridView";
+            this.сотрудник_представлениеDataGridView.Size = new System.Drawing.Size(543, 256);
+            this.сотрудник_представлениеDataGridView.TabIndex = 26;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Адрес_склад";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Адрес_склад";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Idd_Склада";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Город расположения склада";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Номер_паспорта";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Номер_паспорта";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 162;
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Номер_паспорта";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Номер паспорта";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Фамилия";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Фамилия";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Фамилия";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Фамилия";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Имя";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Имя";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // dataGridViewTextBoxColumn5
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Имя";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Имя";
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Отчество";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Отчество";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // dataGridViewTextBoxColumn6
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Отчество";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Отчество";
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Должность";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Должность";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
             // dataGridViewTextBoxColumn7
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Должность";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Должность";
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Адрес_сотрудника";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Адрес_сотрудника";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
             // dataGridViewTextBoxColumn8
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Адрес_сотрудника";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Адрес сотрудника";
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Номер_телефона_сотрудника";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Номер_телефона_сотрудника";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
             // dataGridViewTextBoxColumn9
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Номер_телефона_сотрудника";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Номер телефона сотрудника";
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Дата_рождения_сотрудника";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Дата_рождения_сотрудника";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
-            // dataGridViewTextBoxColumn10
+            // database_equipment_accountingDataSet1
             // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "дата_рождения_сотрудника";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Дата рождения сотрудника";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 150;
+            this.database_equipment_accountingDataSet1.DataSetName = "Database_equipment_accountingDataSet";
+            this.database_equipment_accountingDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // сотрудникпредставлениеBindingSource1
+            // 
+            this.сотрудникпредставлениеBindingSource1.DataMember = "Сотрудник_представление";
+            this.сотрудникпредставлениеBindingSource1.DataSource = this.database_equipment_accountingDataSet1;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataSource = this.сотрудникпредставлениеBindingSource1;
+            this.comboBox1.DisplayMember = "Фамилия";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(257, 291);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(373, 21);
+            this.comboBox1.TabIndex = 27;
+            this.comboBox1.ValueMember = "ID_Сотрудника";
             // 
             // TableStaff
             // 
@@ -379,11 +390,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Учет_оборудования.Properties.Resources._15f8153cb5f61ff9bfad853c2966eb6d;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1024, 328);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.сотрудникиDataGridView);
+            this.ClientSize = new System.Drawing.Size(1032, 344);
             this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.сотрудник_представлениеDataGridView);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -400,7 +410,10 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.сотрудникиDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.сотрудникпредставлениеBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.сотрудник_представлениеDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_equipment_accountingDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.сотрудникпредставлениеBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -419,7 +432,6 @@
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
@@ -428,9 +440,12 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.DataGridView сотрудникиDataGridView;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.BindingSource сотрудникпредставлениеBindingSource;
+        private Database_equipment_accountingDataSetTableAdapters.Сотрудник_представлениеTableAdapter сотрудник_представлениеTableAdapter;
+        private System.Windows.Forms.DataGridView сотрудник_представлениеDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
@@ -439,6 +454,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private Database_equipment_accountingDataSet database_equipment_accountingDataSet1;
+        private System.Windows.Forms.BindingSource сотрудникпредставлениеBindingSource1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

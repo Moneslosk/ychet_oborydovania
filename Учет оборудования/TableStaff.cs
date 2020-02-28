@@ -30,36 +30,40 @@ namespace Учет_оборудования
 
 		private void TableStaff_Load(object sender, EventArgs e)
 		{
-			// TODO: This line of code loads data into the 'database_equipment_accountingDataSet.Сотрудники' table. You can move, or remove it, as needed.
-			this.сотрудникиTableAdapter.Fill(this.database_equipment_accountingDataSet.Сотрудники);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "database_equipment_accountingDataSet1.Сотрудник_представление". При необходимости она может быть перемещена или удалена.
+            this.сотрудник_представлениеTableAdapter.Fill(this.database_equipment_accountingDataSet1.Сотрудник_представление);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "database_equipment_accountingDataSet.Сотрудник_представление". При необходимости она может быть перемещена или удалена.
+            this.сотрудник_представлениеTableAdapter.Fill(this.database_equipment_accountingDataSet.Сотрудник_представление);
+            // TODO: This line of code loads data into the 'database_equipment_accountingDataSet.Сотрудники' table. You can move, or remove it, as needed.
+            this.сотрудникиTableAdapter.Fill(this.database_equipment_accountingDataSet.Сотрудники);
 
 		}
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			for (int col = 0; col < сотрудникиDataGridView.ColumnCount; col++)
-			for (int row = 0; row < сотрудникиDataGridView.RowCount - 1; row++)
-				сотрудникиDataGridView[col, row].Style.BackColor = Color.White;
-			for (int col = 0; col < сотрудникиDataGridView.ColumnCount; col++)
-			for (int row = 0; row < сотрудникиDataGridView.RowCount - 1; row++)
-				if (сотрудникиDataGridView[col, row].Value.ToString().IndexOf(textBox1.Text, StringComparison.OrdinalIgnoreCase) >= 0)
+			for (int col = 0; col < сотрудник_представлениеDataGridView.ColumnCount; col++)
+			for (int row = 0; row < сотрудник_представлениеDataGridView.RowCount - 1; row++)
+                    сотрудник_представлениеDataGridView[col, row].Style.BackColor = Color.White;
+			for (int col = 0; col < сотрудник_представлениеDataGridView.ColumnCount; col++)
+			for (int row = 0; row < сотрудник_представлениеDataGridView.RowCount - 1; row++)
+				if (сотрудник_представлениеDataGridView[col, row].Value.ToString().IndexOf(textBox1.Text, StringComparison.OrdinalIgnoreCase) >= 0)
 				{
-					for (int Q = 0; Q < сотрудникиDataGridView.ColumnCount; Q++)
-						сотрудникиDataGridView[Q, row].Style.BackColor = Color.Khaki;
+					for (int Q = 0; Q < сотрудник_представлениеDataGridView.ColumnCount; Q++)
+                            сотрудник_представлениеDataGridView[Q, row].Style.BackColor = Color.Khaki;
 				}
-			for (int col = 0; col < сотрудникиDataGridView.ColumnCount; col++)
-			for (int row = 0; row < сотрудникиDataGridView.RowCount - 1; row++)
-				if (сотрудникиDataGridView[col, row].Value.ToString().IndexOf(textBox1.Text, StringComparison.OrdinalIgnoreCase) >= 0)
-					сотрудникиDataGridView[col, row].Style.BackColor = Color.Orange;
+			for (int col = 0; col < сотрудник_представлениеDataGridView.ColumnCount; col++)
+			for (int row = 0; row < сотрудник_представлениеDataGridView.RowCount - 1; row++)
+				if (сотрудник_представлениеDataGridView[col, row].Value.ToString().IndexOf(textBox1.Text, StringComparison.OrdinalIgnoreCase) >= 0)
+                        сотрудник_представлениеDataGridView[col, row].Style.BackColor = Color.Orange;
 			textBox1.Clear();
 		}
 
 		private void button2_Click(object sender, EventArgs e)
 		{
 			textBox1.Clear();
-			for (int col = 0; col < сотрудникиDataGridView.ColumnCount; col++)
-			for (int row = 0; row < сотрудникиDataGridView.RowCount - 1; row++)
-				сотрудникиDataGridView[col, row].Style.BackColor = Color.White;
+			for (int col = 0; col < сотрудник_представлениеDataGridView.ColumnCount; col++)
+			for (int row = 0; row < сотрудник_представлениеDataGridView.RowCount - 1; row++)
+                    сотрудник_представлениеDataGridView[col, row].Style.BackColor = Color.White;
 		}
 		public void exportToWord(DataGridView DGV, string filename, string name)
 		{
@@ -158,7 +162,7 @@ namespace Учет_оборудования
 			if (sfd.ShowDialog() == DialogResult.OK)
 			{
 				string ter = "Сотрудники";
-				exportToWord(сотрудникиDataGridView, sfd.FileName, ter);
+				exportToWord(сотрудник_представлениеDataGridView, sfd.FileName, ter);
 			}
 		}
 
@@ -221,7 +225,7 @@ namespace Учет_оборудования
 		}
 		private void button4_Click(object sender, EventArgs e)
 		{
-			exportToExcel(сотрудникиDataGridView);
+			exportToExcel(сотрудник_представлениеDataGridView);
 		}
         private System.Windows.Forms.DataGridViewColumn COL;
         private void button5_Click(object sender, EventArgs e)
@@ -229,31 +233,26 @@ namespace Учет_оборудования
             COL = new System.Windows.Forms.DataGridViewColumn();
             switch (listBox1.SelectedIndex)
             {
+
                 case 0:
-                    COL = dataGridViewTextBoxColumn2;
-                    break;
-                case 1:
                     COL = dataGridViewTextBoxColumn3;
                     break;
-                case 2:
+                case 1:
                     COL = dataGridViewTextBoxColumn4;
                     break;
-                case 3:
+                case 2:
                     COL = dataGridViewTextBoxColumn5;
                     break;
-                case 4:
+                case 3:
                     COL = dataGridViewTextBoxColumn6;
                     break;
-                case 5:
+                case 4:
                     COL = dataGridViewTextBoxColumn7;
                     break;
-                case 6:
+                case 5:
                     COL = dataGridViewTextBoxColumn8;
                     break;
-                case 7:
-                    COL = dataGridViewTextBoxColumn9;
-                    break;
-                case 8:
+                case 6:
                     COL = dataGridViewTextBoxColumn10;
                     break;
 
@@ -261,20 +260,20 @@ namespace Учет_оборудования
 
             if (radioButton1.Checked == true)
             {
-                сотрудникиDataGridView.Sort(COL, System.ComponentModel.ListSortDirection.Ascending);
+                сотрудник_представлениеDataGridView.Sort(COL, System.ComponentModel.ListSortDirection.Ascending);
             }
             else
-                сотрудникиDataGridView.Sort(COL, System.ComponentModel.ListSortDirection.Descending);
+                сотрудник_представлениеDataGridView.Sort(COL, System.ComponentModel.ListSortDirection.Descending);
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            сотрудникиBindingSource.Filter = "Фамилия='" + comboBox1.Text + "'";
+            сотрудникпредставлениеBindingSource1.Filter = "Фамилия='" + comboBox1.Text + "'";
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            сотрудникиBindingSource.Filter = "";
+            сотрудникпредставлениеBindingSource1.Filter = "";
         }
     }
 }
