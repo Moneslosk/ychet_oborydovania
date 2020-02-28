@@ -120,27 +120,302 @@
   <metadata name="idd_СкладаLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="idd_СкладаLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="idd_СкладаLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="idd_СкладаLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 77</value>
+  </data>
+  <data name="idd_СкладаLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 24</value>
+  </data>
+  <data name="idd_СкладаLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="idd_СкладаLabel.Text" xml:space="preserve">
+    <value>Расположение склада:</value>
+  </data>
+  <data name="&gt;&gt;idd_СкладаLabel.Name" xml:space="preserve">
+    <value>idd_СкладаLabel</value>
+  </data>
+  <data name="&gt;&gt;idd_СкладаLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;idd_СкладаLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;idd_СкладаLabel.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
   <metadata name="номер_паспортаLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="номер_паспортаLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="номер_паспортаLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="номер_паспортаLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 42</value>
+  </data>
+  <data name="номер_паспортаLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 24</value>
+  </data>
+  <data name="номер_паспортаLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="номер_паспортаLabel.Text" xml:space="preserve">
+    <value>Номер паспорта:</value>
+  </data>
+  <data name="&gt;&gt;номер_паспортаLabel.Name" xml:space="preserve">
+    <value>номер_паспортаLabel</value>
+  </data>
+  <data name="&gt;&gt;номер_паспортаLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;номер_паспортаLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;номер_паспортаLabel.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
   <metadata name="фамилияLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="фамилияLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="фамилияLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="фамилияLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 47</value>
+  </data>
+  <data name="фамилияLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 24</value>
+  </data>
+  <data name="фамилияLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="фамилияLabel.Text" xml:space="preserve">
+    <value>Фамилия:</value>
+  </data>
+  <data name="&gt;&gt;фамилияLabel.Name" xml:space="preserve">
+    <value>фамилияLabel</value>
+  </data>
+  <data name="&gt;&gt;фамилияLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;фамилияLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;фамилияLabel.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
   <metadata name="имяLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="имяLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="имяLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="имяLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>367, 82</value>
+  </data>
+  <data name="имяLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 24</value>
+  </data>
+  <data name="имяLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="имяLabel.Text" xml:space="preserve">
+    <value>Имя:</value>
+  </data>
+  <data name="&gt;&gt;имяLabel.Name" xml:space="preserve">
+    <value>имяLabel</value>
+  </data>
+  <data name="&gt;&gt;имяLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;имяLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;имяLabel.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
   <metadata name="отчествоLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="отчествоLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="отчествоLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.5pt, style=Bold, Italic</value>
+  </data>
+  <data name="отчествоLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 117</value>
+  </data>
+  <data name="отчествоLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 25</value>
+  </data>
+  <data name="отчествоLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="отчествоLabel.Text" xml:space="preserve">
+    <value>Отчество:</value>
+  </data>
+  <data name="&gt;&gt;отчествоLabel.Name" xml:space="preserve">
+    <value>отчествоLabel</value>
+  </data>
+  <data name="&gt;&gt;отчествоLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;отчествоLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;отчествоLabel.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
   <metadata name="должностьLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="должностьLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="должностьLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="должностьLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 159</value>
+  </data>
+  <data name="должностьLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 24</value>
+  </data>
+  <data name="должностьLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="должностьLabel.Text" xml:space="preserve">
+    <value>Должность:</value>
+  </data>
+  <data name="&gt;&gt;должностьLabel.Name" xml:space="preserve">
+    <value>должностьLabel</value>
+  </data>
+  <data name="&gt;&gt;должностьLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;должностьLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;должностьLabel.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
   <metadata name="адрес_сотрудникаLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="адрес_сотрудникаLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="адрес_сотрудникаLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="адрес_сотрудникаLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 200</value>
+  </data>
+  <data name="адрес_сотрудникаLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 24</value>
+  </data>
+  <data name="адрес_сотрудникаLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="адрес_сотрудникаLabel.Text" xml:space="preserve">
+    <value>Адрес сотрудника:</value>
+  </data>
+  <data name="&gt;&gt;адрес_сотрудникаLabel.Name" xml:space="preserve">
+    <value>адрес_сотрудникаLabel</value>
+  </data>
+  <data name="&gt;&gt;адрес_сотрудникаLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;адрес_сотрудникаLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;адрес_сотрудникаLabel.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
   <metadata name="номер_телефона_сотрудникаLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="номер_телефона_сотрудникаLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="номер_телефона_сотрудникаLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="номер_телефона_сотрудникаLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 239</value>
+  </data>
+  <data name="номер_телефона_сотрудникаLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>302, 24</value>
+  </data>
+  <data name="номер_телефона_сотрудникаLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="номер_телефона_сотрудникаLabel.Text" xml:space="preserve">
+    <value>Номер телефона сотрудника:</value>
+  </data>
+  <data name="&gt;&gt;номер_телефона_сотрудникаLabel.Name" xml:space="preserve">
+    <value>номер_телефона_сотрудникаLabel</value>
+  </data>
+  <data name="&gt;&gt;номер_телефона_сотрудникаLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;номер_телефона_сотрудникаLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;номер_телефона_сотрудникаLabel.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <metadata name="дата_рождения_сотрудникаLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="дата_рождения_сотрудникаLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="дата_рождения_сотрудникаLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="дата_рождения_сотрудникаLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 282</value>
+  </data>
+  <data name="дата_рождения_сотрудникаLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>289, 24</value>
+  </data>
+  <data name="дата_рождения_сотрудникаLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="дата_рождения_сотрудникаLabel.Text" xml:space="preserve">
+    <value>Дата рождения сотрудника:</value>
+  </data>
+  <data name="&gt;&gt;дата_рождения_сотрудникаLabel.Name" xml:space="preserve">
+    <value>дата_рождения_сотрудникаLabel</value>
+  </data>
+  <data name="&gt;&gt;дата_рождения_сотрудникаLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;дата_рождения_сотрудникаLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;дата_рождения_сотрудникаLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
   <metadata name="database_equipment_accountingDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -159,10 +434,788 @@
   <metadata name="сотрудникиBindingNavigator.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>847, 17</value>
   </metadata>
+  <data name="bindingNavigatorCountItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 22</value>
+  </data>
+  <data name="bindingNavigatorCountItem.Text" xml:space="preserve">
+    <value>для {0}</value>
+  </data>
+  <data name="bindingNavigatorCountItem.ToolTipText" xml:space="preserve">
+    <value>Total number of items</value>
+  </data>
+  <data name="bindingNavigatorPositionItem.AccessibleName" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="bindingNavigatorPositionItem.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bindingNavigatorPositionItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
+  </data>
+  <data name="bindingNavigatorPositionItem.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bindingNavigatorPositionItem.ToolTipText" xml:space="preserve">
+    <value>Current position</value>
+  </data>
+  <data name="сотрудникиBindingNavigator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="сотрудникиBindingNavigator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>983, 25</value>
+  </data>
+  <data name="сотрудникиBindingNavigator.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="сотрудникиBindingNavigator.Text" xml:space="preserve">
+    <value>bindingNavigator1</value>
+  </data>
+  <data name="&gt;&gt;сотрудникиBindingNavigator.Name" xml:space="preserve">
+    <value>сотрудникиBindingNavigator</value>
+  </data>
+  <data name="&gt;&gt;сотрудникиBindingNavigator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingNavigator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;сотрудникиBindingNavigator.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;сотрудникиBindingNavigator.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="номер_паспортаTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="номер_паспортаTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 43</value>
+  </data>
+  <data name="номер_паспортаTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="номер_паспортаTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;номер_паспортаTextBox.Name" xml:space="preserve">
+    <value>номер_паспортаTextBox</value>
+  </data>
+  <data name="&gt;&gt;номер_паспортаTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;номер_паспортаTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;номер_паспортаTextBox.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="фамилияTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="фамилияTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 45</value>
+  </data>
+  <data name="фамилияTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 26</value>
+  </data>
+  <data name="фамилияTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;фамилияTextBox.Name" xml:space="preserve">
+    <value>фамилияTextBox</value>
+  </data>
+  <data name="&gt;&gt;фамилияTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;фамилияTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;фамилияTextBox.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="имяTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="имяTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>437, 78</value>
+  </data>
+  <data name="имяTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 26</value>
+  </data>
+  <data name="имяTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;имяTextBox.Name" xml:space="preserve">
+    <value>имяTextBox</value>
+  </data>
+  <data name="&gt;&gt;имяTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;имяTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;имяTextBox.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="отчествоTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="отчествоTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>436, 117</value>
+  </data>
+  <data name="отчествоTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 26</value>
+  </data>
+  <data name="отчествоTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;отчествоTextBox.Name" xml:space="preserve">
+    <value>отчествоTextBox</value>
+  </data>
+  <data name="&gt;&gt;отчествоTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;отчествоTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;отчествоTextBox.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="должностьTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="должностьTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>436, 158</value>
+  </data>
+  <data name="должностьTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 26</value>
+  </data>
+  <data name="должностьTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;должностьTextBox.Name" xml:space="preserve">
+    <value>должностьTextBox</value>
+  </data>
+  <data name="&gt;&gt;должностьTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;должностьTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;должностьTextBox.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="адрес_сотрудникаTextBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="адрес_сотрудникаTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="адрес_сотрудникаTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 199</value>
+  </data>
+  <data name="адрес_сотрудникаTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>485, 26</value>
+  </data>
+  <data name="адрес_сотрудникаTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;адрес_сотрудникаTextBox.Name" xml:space="preserve">
+    <value>адрес_сотрудникаTextBox</value>
+  </data>
+  <data name="&gt;&gt;адрес_сотрудникаTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;адрес_сотрудникаTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;адрес_сотрудникаTextBox.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="номер_телефона_сотрудникаTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="номер_телефона_сотрудникаTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 239</value>
+  </data>
+  <data name="номер_телефона_сотрудникаTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 26</value>
+  </data>
+  <data name="номер_телефона_сотрудникаTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;номер_телефона_сотрудникаTextBox.Name" xml:space="preserve">
+    <value>номер_телефона_сотрудникаTextBox</value>
+  </data>
+  <data name="&gt;&gt;номер_телефона_сотрудникаTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;номер_телефона_сотрудникаTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;номер_телефона_сотрудникаTextBox.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <metadata name="складBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1060, 17</value>
+  </metadata>
+  <data name="comboBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 77</value>
+  </data>
+  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 27</value>
+  </data>
+  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
+    <value>comboBox1</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
   <metadata name="складBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1060, 17</value>
   </metadata>
   <metadata name="складBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 56</value>
   </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button8.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="button8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 339</value>
+  </data>
+  <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 56</value>
+  </data>
+  <data name="button8.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;button8.Name" xml:space="preserve">
+    <value>button8</value>
+  </data>
+  <data name="&gt;&gt;button8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="button7.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="button7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>635, 339</value>
+  </data>
+  <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 56</value>
+  </data>
+  <data name="button7.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;button7.Name" xml:space="preserve">
+    <value>button7</value>
+  </data>
+  <data name="&gt;&gt;button7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="button6.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="button6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>283, 339</value>
+  </data>
+  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 56</value>
+  </data>
+  <data name="button6.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;button6.Name" xml:space="preserve">
+    <value>button6</value>
+  </data>
+  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="button5.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="button5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>588, 339</value>
+  </data>
+  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 56</value>
+  </data>
+  <data name="button5.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;button5.Name" xml:space="preserve">
+    <value>button5</value>
+  </data>
+  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="button4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>469, 370</value>
+  </data>
+  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 33</value>
+  </data>
+  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="button4.Text" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
+  </data>
+  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>469, 331</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 33</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>Таблица</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 331</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 33</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 370</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 33</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="дата_рождения_сотрудникаDateTimePicker.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="дата_рождения_сотрудникаDateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 281</value>
+  </data>
+  <data name="дата_рождения_сотрудникаDateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 26</value>
+  </data>
+  <data name="дата_рождения_сотрудникаDateTimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;дата_рождения_сотрудникаDateTimePicker.Name" xml:space="preserve">
+    <value>дата_рождения_сотрудникаDateTimePicker</value>
+  </data>
+  <data name="&gt;&gt;дата_рождения_сотрудникаDateTimePicker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;дата_рождения_сотрудникаDateTimePicker.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;дата_рождения_сотрудникаDateTimePicker.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="treeView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>689, 28</value>
+  </data>
+  <data name="treeView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 156</value>
+  </data>
+  <data name="treeView1.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="treeView1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;treeView1.Name" xml:space="preserve">
+    <value>treeView1</value>
+  </data>
+  <data name="&gt;&gt;treeView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;treeView1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;treeView1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="button9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="button9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>775, 197</value>
+  </data>
+  <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 28</value>
+  </data>
+  <data name="button9.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="button9.Text" xml:space="preserve">
+    <value>Добавить адрес</value>
+  </data>
+  <data name="button9.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;button9.Name" xml:space="preserve">
+    <value>button9</value>
+  </data>
+  <data name="&gt;&gt;button9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>824, 242</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 24</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Дом №</value>
+  </data>
+  <data name="label1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>771, 281</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 24</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Квартира №</value>
+  </data>
+  <data name="label2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="button10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="button10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>775, 313</value>
+  </data>
+  <data name="button10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 51</value>
+  </data>
+  <data name="button10.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="button10.Text" xml:space="preserve">
+    <value>Добавить дом и квартиру</value>
+  </data>
+  <data name="button10.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;button10.Name" xml:space="preserve">
+    <value>button10</value>
+  </data>
+  <data name="&gt;&gt;button10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button10.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button10.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>908, 240</value>
+  </data>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 26</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="textBox1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt, style=Bold</value>
+  </data>
+  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>908, 279</value>
+  </data>
+  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 26</value>
+  </data>
+  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="textBox2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
+    <value>textBox2</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>983, 415</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Staff</value>
+  </data>
+  <data name="&gt;&gt;database_equipment_accountingDataSet.Name" xml:space="preserve">
+    <value>database_equipment_accountingDataSet</value>
+  </data>
+  <data name="&gt;&gt;database_equipment_accountingDataSet.Type" xml:space="preserve">
+    <value>Учет_оборудования.Database_equipment_accountingDataSet, Database_equipment_accountingDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;сотрудникиBindingSource.Name" xml:space="preserve">
+    <value>сотрудникиBindingSource</value>
+  </data>
+  <data name="&gt;&gt;сотрудникиBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;сотрудникиTableAdapter.Name" xml:space="preserve">
+    <value>сотрудникиTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;сотрудникиTableAdapter.Type" xml:space="preserve">
+    <value>Учет_оборудования.Database_equipment_accountingDataSetTableAdapters.СотрудникиTableAdapter, Database_equipment_accountingDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tableAdapterManager.Name" xml:space="preserve">
+    <value>tableAdapterManager</value>
+  </data>
+  <data name="&gt;&gt;tableAdapterManager.Type" xml:space="preserve">
+    <value>Учет_оборудования.Database_equipment_accountingDataSetTableAdapters.TableAdapterManager, Database_equipment_accountingDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;складTableAdapter.Name" xml:space="preserve">
+    <value>складTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;складTableAdapter.Type" xml:space="preserve">
+    <value>Учет_оборудования.Database_equipment_accountingDataSetTableAdapters.СкладTableAdapter, Database_equipment_accountingDataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorCountItem.Name" xml:space="preserve">
+    <value>bindingNavigatorCountItem</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorCountItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorPositionItem.Name" xml:space="preserve">
+    <value>bindingNavigatorPositionItem</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorPositionItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;складBindingSource.Name" xml:space="preserve">
+    <value>складBindingSource</value>
+  </data>
+  <data name="&gt;&gt;складBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;складBindingSource1.Name" xml:space="preserve">
+    <value>складBindingSource1</value>
+  </data>
+  <data name="&gt;&gt;складBindingSource1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Staff</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

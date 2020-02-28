@@ -33,8 +33,15 @@ namespace Учет_оборудования
 			this.оборудованиеTableAdapter.Fill(this.database_equipment_accountingDataSet.Оборудование);
 			// TODO: This line of code loads data into the 'database_equipment_accountingDataSet.Поставка' table. You can move, or remove it, as needed.
 			this.поставкаTableAdapter.Fill(this.database_equipment_accountingDataSet.Поставка);
+ 
+            //treeView1.Nodes.Add("Беларусь");
+            //treeView1.Nodes[treeView1.Nodes.Count - 1].Nodes.Add("Попа");
+            //treeView1.Nodes[treeView1.Nodes.Count - 1].Nodes.Add("Попочка");
+            //treeView1.Nodes.Add("Беларусь2");
+            //treeView1.Nodes[treeView1.Nodes.Count - 1].Nodes.Add("Попа2");
 
-		}
+
+        }
 
 		private void button2_Click(object sender, EventArgs e)
 		{
@@ -79,5 +86,12 @@ namespace Учет_оборудования
 		{
 			this.поставкаBindingSource.MoveLast();
 		}
-	}
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            var node = treeView1.SelectedNode;
+            var path = node.FullPath;
+            textBox1.Text = path;
+        }
+    }
 }

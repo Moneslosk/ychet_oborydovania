@@ -223,5 +223,58 @@ namespace Учет_оборудования
 		{
 			exportToExcel(сотрудникиDataGridView);
 		}
-	}
+        private System.Windows.Forms.DataGridViewColumn COL;
+        private void button5_Click(object sender, EventArgs e)
+        {
+            COL = new System.Windows.Forms.DataGridViewColumn();
+            switch (listBox1.SelectedIndex)
+            {
+                case 0:
+                    COL = dataGridViewTextBoxColumn2;
+                    break;
+                case 1:
+                    COL = dataGridViewTextBoxColumn3;
+                    break;
+                case 2:
+                    COL = dataGridViewTextBoxColumn4;
+                    break;
+                case 3:
+                    COL = dataGridViewTextBoxColumn5;
+                    break;
+                case 4:
+                    COL = dataGridViewTextBoxColumn6;
+                    break;
+                case 5:
+                    COL = dataGridViewTextBoxColumn7;
+                    break;
+                case 6:
+                    COL = dataGridViewTextBoxColumn8;
+                    break;
+                case 7:
+                    COL = dataGridViewTextBoxColumn9;
+                    break;
+                case 8:
+                    COL = dataGridViewTextBoxColumn10;
+                    break;
+
+            }
+
+            if (radioButton1.Checked == true)
+            {
+                сотрудникиDataGridView.Sort(COL, System.ComponentModel.ListSortDirection.Ascending);
+            }
+            else
+                сотрудникиDataGridView.Sort(COL, System.ComponentModel.ListSortDirection.Descending);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            сотрудникиBindingSource.Filter = "Фамилия='" + comboBox1.Text + "'";
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            сотрудникиBindingSource.Filter = "";
+        }
+    }
 }

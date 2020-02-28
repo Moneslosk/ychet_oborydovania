@@ -246,15 +246,52 @@ namespace Учет_оборудования
 				case 4:
 					COL = dataGridViewTextBoxColumn6;
 					break;
-			}
+                case 5:
+                    COL = dataGridViewTextBoxColumn7;
+                    break;
+                case 6:
+                    COL = dataGridViewTextBoxColumn8;
+                    break;
+                case 7:
+                    COL = dataGridViewTextBoxColumn9;
+                    break;
+                case 8:
+                    COL = dataGridViewTextBoxColumn10;
+                    break;
+            
+            }
+
+            if (radioButton1.Checked == true)
+            {
+                оборудованиеDataGridView.Sort(COL, System.ComponentModel.ListSortDirection.Ascending);
+            }
+            else
+                оборудованиеDataGridView.Sort(COL, System.ComponentModel.ListSortDirection.Descending);
 
 
-		}
+
+
+        }
 
 		private void textBox1_TextChanged(object sender, EventArgs e)
 		{
 			
 			
 		}
-	}
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            button5.Enabled = true;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            оборудованиеBindingSource.Filter = "";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            оборудованиеBindingSource.Filter = "Название_оборудования='" + comboBox1.Text + "'";
+        }
+    }
 }

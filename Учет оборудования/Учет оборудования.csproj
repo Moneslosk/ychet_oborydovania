@@ -171,7 +171,13 @@
     <EmbeddedResource Include="Equipment.resx">
       <DependentUpon>Equipment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Equipment.ru-RU.resx">
+      <DependentUpon>Equipment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main Window.resx">
+      <DependentUpon>Main Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Window.ru-RU.resx">
       <DependentUpon>Main Window.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -187,16 +193,25 @@
     <EmbeddedResource Include="Staff.resx">
       <DependentUpon>Staff.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Staff.ru-RU.resx">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Supplier.resx">
       <DependentUpon>Supplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Supply.resx">
       <DependentUpon>Supply.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Supply.ru-RU.resx">
+      <DependentUpon>Supply.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TableCategories.resx">
       <DependentUpon>TableCategories.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TableEquipment.resx">
+      <DependentUpon>TableEquipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableEquipment.ru-RU.resx">
       <DependentUpon>TableEquipment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TableStaff.resx">
