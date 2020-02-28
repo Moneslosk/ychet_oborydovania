@@ -12,7 +12,7 @@ namespace Учет_оборудования
 {
 	public partial class Staff : Form
 	{
-		public Staff()
+		public Staff() 
 		{
 			InitializeComponent();
 		}
@@ -7780,11 +7780,19 @@ namespace Учет_оборудования
 
         private void button10_Click(object sender, EventArgs e)
         {
-            string dom = адрес_сотрудникаTextBox.Text + (", д. " + textBox1.Text + ", кв. " + textBox2.Text);
-            адрес_сотрудникаTextBox.Text = dom;
-            button10.Enabled = false;
-            textBox1.Enabled = false;
-            textBox2.Enabled = false;
+            string dom = ", д. " + textBox1.Text + ", кв. " + textBox2.Text;
+            string adres_sotrydnika = адрес_сотрудникаTextBox.Text;
+			
+
+			if (!adres_sotrydnika.Contains(", д. "))
+            {
+	            адрес_сотрудникаTextBox.Text = adres_sotrydnika + dom;
+			}
+            else
+            {
+	            var ddd = adres_sotrydnika.Substring(adres_sotrydnika.IndexOf(", д. "));
+				адрес_сотрудникаTextBox.Text = adres_sotrydnika.Replace(ddd,dom);
+			}
 
         }
     }
